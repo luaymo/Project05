@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-программист</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@6.0.0/dist/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body >
+
+<header>
+  <p>Frontend-программист <i class="fas fa-paint-brush" style="margin-left: 40px;"></i></p>
+</header>
+<main>
+
+<div class="body">
+  <div class="input_group">
+      <div class="navigation" style="height: 100%">
+<ul>
+<li>
+<a  href="/">
+  <i class="fas fa-home"></i>
+  <span>Главная</span>
+</a>
+</li>
+<li>
+<a href="{% url 'demend' %}">
+  <i class="fas fa-chart-line"></i>
+  <span>Востребованность</span>
+</a>
+</li>	
+<li>
+<a style="color: #000000 !important;" href="{% url 'geography' %}">
+  <i class="fas fa-globe"></i>
+  <span>География</span>
+</a>
+</li>
+<li>
+<a href="{% url 'skills' %}">
+  <i class="fas fa-cogs"></i>
+  <span>Навыки</span>
+</a>
+</li>	
+<li>
+<a href="{% url 'lastVacancy' %}">
+  <i class="fas fa-briefcase"></i>
+  <span>Последние вакансии</span>
+</a>
+</li>
+</ul>
+
+</div>
+<div class="home_text" style="top: 100px; margin-bottom: 100px;">
+  {% for data in context %}
+        <img class="demand_graph_1" src="{{ data.graph_salary_level_by_city.url }}"/>
+        <img class="demand_graph_2" src="{{ data.graph_vacancy_fraction_by_city.url }}"/>
+        <div class="tables">
+            {{ data.table|safe }}
+        </div>
+    {% endfor %}
+</div>
+</div>
+</div>
+</main>
+
+<footer style="top: 92.3%">
+   
+    
+  <p>Абделазиз Лоай Мохамед Рефаат  АТ-18</p>
+</footer>
+</body>
+</html>

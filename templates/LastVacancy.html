@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    {% load static %}
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frontend-программист</title>
+        <link rel="stylesheet" href="{% static "css/styles.css" %}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@6.0.0/dist/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body style="top: 242%">
+<header>
+  <p>Frontend-программист <i class="fas fa-paint-brush" style="margin-left: 40px;"></i></p>
+</header>
+<main>
+  <div class="body">
+    <div class="input_group">
+        <div class="navigation" style="height: 100%">
+<ul>
+<li>
+  <a href="/">
+    <i class="fas fa-home"></i>
+    <span>Главная</span>
+  </a>
+</li>
+<li>
+  <a href="{% url 'demend' %}">
+    <i class="fas fa-chart-line"></i>
+    <span>Востребованность</span>
+  </a>
+</li>	
+<li>
+  <a href="{% url 'geography' %}">
+    <i class="fas fa-globe"></i>
+    <span>География</span>
+  </a>
+</li>
+<li>
+  <a href="{% url 'skills' %}">
+    <i class="fas fa-cogs"></i>
+    <span>Навыки</span>
+  </a>
+</li>	
+<li>
+  <a  style="color: #000000 !important;"  href="{% url 'lastVacancy' %}">
+    <i class="fas fa-briefcase"></i>
+    <span>Последние вакансии</span>
+  </a>
+</li>
+</ul>
+        <div class="home_text">
+            <h1>Последние вакансии</h1>
+            <div class="empty_skills"></div>
+        </div>
+        <div class="LVtable" style="margin-left: 50px;">
+            
+              <h3>Frontend-программист (Middle)</h3>
+              <br>
+              <p>Описание: О компании YouDesign: мы специализируемся на создании уникальных веб-приложений, объединяя креативный дизайн с функциональным программированием...</p>
+              <p>Навыки: ['Web Design', 'UI/UX', 'HTML', 'CSS', 'JavaScript', 'Adobe Creative Suite']</p>
+              <p>Компания: ДизайнСтудия</p>
+              <p>Зарплата: 140000 - 160000 RUR</p>
+              <p>Город: Москва</p>
+              <p>Дата публикации: 2024-01-24</p>
+              <p>Ссылка: https://example.com/vacancy/91591444</p>
+              <br>
+              <br>
+          
+              <h3>Frontend-программист</h3>
+              <br>
+
+              <p>Описание: Creative Minds - IT агентство, которое переосмысливает подход к дизайну и программированию, создавая эффективные и стильные веб-приложения...</p>
+              <p>Навыки: ['Web Design', 'Frontend Development', 'UI/UX', 'HTML', 'CSS', 'JavaScript']</p>
+              <p>Компания: Creative Minds</p>
+              <p>Зарплата: None - 350000 RUR</p>
+              <p>Город: Санкт-Петербург</p>
+              <p>Дата публикации: 2024-01-24</p>
+              <p>Ссылка: https://example.com/vacancy/91657291</p>
+              <br>
+              <br>
+          
+              <h3>Fullstack Frontend-программист</h3>
+              <br>
+
+              <p>Описание: Привет! Наша команда ищет талантливого Frontendа-программиста для создания уникальных веб-приложений в сфере e-commerce. Присоединяйтесь к нам!</p>
+              <p>Навыки: ['Web Design', 'Frontend Development', 'Backend Development', 'UI/UX', 'HTML', 'CSS', 'JavaScript', 'Node.js', 'MongoDB']</p>
+              <p>Компания: Инновационные Технологии</p>
+              <p>Зарплата: 160000 - None RUR</p>
+              <p>Город: Казань</p>
+              <p>Дата публикации: 2024-01-24</p>
+              <p>Ссылка: https://example.com/vacancy/91632547</p>
+              <br>
+              <br>
+          
+              <h3>Senior UX/UI Designer-программист</h3>
+              <br>
+
+              <p>Описание: Мы - ведущая компания в области разработки интерфейсов. Ищем опытного Frontendа-программиста для работы над выдающимися веб-приложениями.</p>
+              <p>Навыки: ['Web Design', 'UI/UX', 'HTML', 'CSS', 'JavaScript', 'React', 'Node.js']</p>
+              <p>Компания: TechSolutions</p>
+              <p>Зарплата: 180000 - 220000 RUR</p>
+              <p>Город: Самара</p>
+              <p>Дата публикации: 2024-01-24</p>
+              <p>Ссылка: https://example.com/vacancy/91646538</p>
+              <br>
+              <br>
+          
+              <h3>Веб-Frontend-программист</h3>
+              <br>
+
+              <p>Описание: Задачи: Разработка и поддержка стильных веб-порталов, внедрение инновационных решений для улучшения пользовательского опыта...</p>
+              <p>Навыки: ['Web Design', 'Frontend Development', 'UI/UX', 'HTML', 'CSS', 'JavaScript']</p>
+              <p>Компания: Новая Эра</p>
+              <p>Зарплата: None - 190000 RUR</p>
+              <p>Город: Санкт-Петербург</p>
+              <p>Дата публикации: 2024-01-24</p>
+              <p>Ссылка: https://example.com/vacancy/91640853</p>
+              <br>
+              <br>
+          
+              <h3>Frontend-программист (Frontend)</h3>
+              <br>
+
+              <p>Описание: Мы ценим творческих людей, создаем современные Frontendские решения и ищем Frontendа-программиста, готового воплощать идеи в реальность.</p>
+              <p>Навыки: ['Web Design', 'Frontend Development', 'UI/UX', 'HTML', 'CSS', 'JavaScript', 'Vue.js']</p>
+              <p>Компания: ДизайнГуру</p>
+              <p>Зарплата: 220000 - None RUR</p>
+              <p>Город: Краснодар</p>
+              <p>Дата публикации: 2024-01-24</p>
+              <p>Ссылка: https://example.com/vacancy/91673205</p>
+              <br>
+              <br>
+          
+              <h3>Frontend-программист (Remote)</h3>
+              <br>
+
+              <p>Описание: IT-Студия Creative Solutions ищет талантливого Frontendа-программиста для удаленной работы. Присоединяйтесь к нашей команде!</p>
+              <p>Навыки: ['Web Design', 'Frontend Development', 'UI/UX', 'HTML', 'CSS', 'JavaScript', 'Remote Work']</p>
+              <p>Компания: Creative Solutions</p>
+              <p>Зарплата: 100000 - 150000 RUR</p>
+              <p>Город: Москва</p>
+              <p>Дата публикации: 2024-01-24</p>
+              <p>Ссылка: https://example.com/vacancy/91659814</p>
+          
+          </div>
+  
+        </div>
+    </div>
+</main>
+<footer style="top: 260%">
+<p>Абделазиз Лоай Мохамед Рефаат  АТ-18</p>
+</footer>
+</body>
+</html>
